@@ -13,6 +13,7 @@ import MyComponent from "../hooks/MyComponent";
 
 function Hooks() {
   const [isOpen, setIsOpen] = useState(false);
+  
   const hooks = [
     "useState",
     "useEffect",
@@ -66,10 +67,10 @@ function Hooks() {
 
   return (
     <>
-      <div className=" w-full relative">
+      <div id="test" className=" w-full relative">
         {!isOpen && (
           <button
-            className="text-white bg-blue-500 h-7 w-7"
+            className="text-white bg-blue-500 h-7 w-7 "
             onClick={() => setIsOpen(true)}
           >
             ➪

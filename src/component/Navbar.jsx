@@ -1,11 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  window.addEventListener("scroll", handleScroll);
-  function handleScroll() {
-    setIsOpen(false);
-  }
 
   return (
     <>
@@ -30,10 +26,10 @@ function Navbar() {
                   React Hooks
                 </a>
                 <a
-                  href="#"
+                  href="/reactrouter"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Services
+                  React Router
                 </a>
                 <a
                   href="#"
@@ -109,10 +105,10 @@ function Navbar() {
               React Hooks
             </a>
             <a
-              href="#"
+              href="/reactrouter"
               className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >
-              Services
+              React Router"
             </a>
             <a
               href="#"
