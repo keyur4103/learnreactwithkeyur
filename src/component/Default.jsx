@@ -7,11 +7,13 @@ import Routers from "../page/Routers";
 function Default() {
   return (
     <>
+
       <Routes>
-        <Route path="/" element={<Introduction />} />
+        <Route exact path="/" element={<Introduction />} />
         <Route path="/hooks" element={<Hooks />} />
         <Route path="/reactrouter" element={<Routers />} />
       </Routes>
+
     </>
   );
 }
